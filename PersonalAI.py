@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
-llm = ChatGroq(model="llama3-8b-8192", temperature=0.0, api_key="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")
+llm = ChatGroq(model="llama3-8b-8192", temperature=0.0, api_key=st.secrets["token"])
 
 st.title("Sunil's AI Assistant")
 st.write("Ask Anything about Sunil, his expertise, skills, education, background, experince, etc.")
